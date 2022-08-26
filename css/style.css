@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Tahoma', 'Geneva', sans-serif;
+}
+
+.wrapperInput{
+    margin:30px 0;
+}
+
+#error{
+    color:transparent;
+}
+
+#error.true{
+    color:red
+}

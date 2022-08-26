@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8"> <!-- pour les caractères spéciaux -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Pour que le code ressemble à qqch sur IE/Edge -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1"> <!-- Toujours adapter à la largeur de l'appareil, mise à l'échelle -->
+    <meta name="referrer" content="origin-when-cross-origin"> <!-- Autorise l'interrogation asynchrone uniquement sur lui même -->
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Bibliothèque obligatoire pour Apple -->
+    <meta name="msapplication-tap-highlight" content="no" /> <!-- Désactive le taplight pour les mobiles (truc bleu quand on clique) -->
+    <meta name="description" content="Jquery"> <!-- Description sur google pour le référencement -->
+    <title>Formulaire</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <h2>Je m'appelle : <span id="nameFromJquery"></span> <span id="firstnameFromJquery"></span></h2>
+    <h2>J'ai : <span id="ageFromJquery"></span></h2>
+    <h2>Mon adresse mail : <span id="mailFromJquery"></span></h2>
+
+    <form action="">
+        <div class="wrapperInput">
+            <label for="nom">Entrer votre nom</label> <br>
+            <input type="text" placeholder="entrez votre nom" id="nom" required>
+        </div>
+        <div class="wrapperInput">
+            <label for="prenom">Entrer votre prenom</label> <br>
+            <input type="text" placeholder="entrez votre prénom" id="prenom" required>
+        </div>
+        <div class="wrapperInput">
+            <label for="age">Entrer votre age</label> <br>
+            <input type="number" placeholder="entrez votre âge" id="age" required> 
+            <span id="error"> Vous devez être majeur </span>
+        </div>
+        <div class="wrapperInput">
+            <label for="mail">Entrer votre mail</label> <br>
+            <input type="email" placeholder="entrez votre mail" id="mail" required>
+        </div>
+        <input type="submit" value="Envoyer" id="btn" disabled>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+
+   
+    
+</body>
+</html>
