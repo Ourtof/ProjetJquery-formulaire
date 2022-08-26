@@ -35,4 +35,8 @@ $(document).ready(function() {
         $('#mailFromJquery').text(valeurMail);
         verif();
     });
+
+    $('#btn').click(function() {
+        location.reload(true);
+    });
 });
