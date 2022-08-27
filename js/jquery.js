@@ -37,6 +37,6 @@ $(document).ready(function() {
     });
 
     $('#btn').click(function() {
-        location.reload(true);
+        location.reload;
     });
 });
