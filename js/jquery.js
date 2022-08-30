@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(function() {
 
     /*************** START FONCTIONS ***************/
     function verif() {
@@ -10,33 +10,29 @@ $(document).ready(function() {
     };
     /*************** END FONCTIONS ***************/
 
-    $('#nom').keyup(function() {
+    $('#nom').on('keyup', function() {
         var valeurNom = $(this).val();
         $('#nameFromJquery').text(valeurNom); 
         verif();
     });
-    $('#prenom').keyup(function(){
+    $('#prenom').on('keyup', function(){
         var valeurPrenom = $(this).val();
         $('#firstnameFromJquery').text(valeurPrenom);
         verif();
     });
-    $('#age').keyup(function(){
+    $('#age').on('keyup', function(){
         var valeurAge = $(this).val();
         $('#ageFromJquery').text(valeurAge);
-        if($('#age').val() < 19) {
+        if($('#age').val() < 18) {
             $('#error').addClass('true');
         } else {
             $('#error').removeClass('true');
         };
         verif();
     });
-    $('#mail').keyup(function(){
+    $('#mail').on('keyup', function(){
         var valeurMail = $(this).val();
         $('#mailFromJquery').text(valeurMail);
         verif();
-    });
-
-    $('#btn').click(function() {
-        location.reload;
     });
 });
